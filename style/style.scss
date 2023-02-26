@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+#burger {
+    display: none;
+    transform: rotate(90deg);
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+$primaWhite: #fafafa;
+$primeBlack: #252525;
+
+
+
+
+
+
+
+ $primeWhite:#fafafa;
+$primeBlack:#252525;
+
+
+@import './components/header.scss';
+@import './components/banner.scss';
+@import './components/slider.scss';
+@import './components/gallery.scss';
+@import './components/contact.scss';
+@import'./components/contact.scss';
+@import './components/footer.scss';
+@import './components/media.scss';

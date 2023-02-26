@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#burger {
+  display: none;
+  transform: rotate(90deg);
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #252525;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 101;
+}
+.header__logo {
+  color: #fafafa;
+  text-transform: uppercase;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  column-gap: 50px;
+}
+.header__menu__item {
+  list-style: none;
+}
+.header__menu__item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+.banner {
+  background-image: url("../img/banner.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider {
+  padding-top: 100px;
+}
+.slider__title {
+  margin-bottom: 50px;
+}
+.slider__block__img {
+  width: 100%;
+}
+
+.gallery {
+  padding-top: 100px;
+}
+.gallery__title {
+  margin-bottom: 50px;
+}
+.gallery__card {
+  padding: 20px;
+  border-bottom: 1px solid #252525;
+  margin-top: 10px;
+}
+.gallery__card__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.contact {
+  margin-top: 180px;
+}
+.contact__title {
+  margin-bottom: 50px;
+}
+.contact__list {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contact__list__item a {
+  color: #252525;
+  text-decoration: none;
+}
+.contact__form {
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #252525;
+}
+.contact__form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #252525;
+  outline: none;
+}
+.contact__form__btn {
+  color: #252525;
+  background-color: transparent;
+  border: 1px solid #252525;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact__form__btn:hover {
+  background-color: #252525;
+  color: #fafafa;
+}
+
+.contact {
+  margin-top: 180px;
+}
+.contact__title {
+  margin-bottom: 50px;
+}
+.contact__list {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contact__list__item a {
+  color: #252525;
+  text-decoration: none;
+}
+.contact__form {
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #252525;
+}
+.contact__form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #252525;
+  outline: none;
+}
+.contact__form__btn {
+  color: #252525;
+  background-color: transparent;
+  border: 1px solid #252525;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact__form__btn:hover {
+  background-color: #252525;
+  color: #fafafa;
+}
+
+footer {
+  background-color: #252525;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+footer p {
+  color: #fafafa;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .banner {
+    height: 80vh;
+  }
+  .row {
+    justify-content: center;
+  }
+  .col-6 {
+    width: 90%;
+  }
+  .contact__form {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .header {
+    padding: 15px 20px;
+  }
+  .header__nav {
+    position: absolute;
+    top: 99%;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #forclose {
+    width: 90%;
+    height: 100%;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    float: right;
+  }
+  .header__menu {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+  .header__menu__item {
+    border-bottom: 1px solid #FFF;
+  }
+  .header__menu__item a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  .active {
+    overflow: visible;
+    opacity: 1;
+    right: 0;
+  }
+  .header__menu {
+    column-gap: 20px;
+  }
+  #burger {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

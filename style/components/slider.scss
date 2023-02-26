@@ -1,0 +1,13 @@
+
+.slider {
+    padding-top: 100px;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__block {
+        &__img {
+            width: 100%;
+        }
+    }
+}

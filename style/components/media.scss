@@ -16,32 +16,6 @@
     .container {
         max-width: 540px;
     }
-    .banner {
-        height: 80vh;
-    }
-    .row {
-        justify-content: center;
-    }
-
-    .col-6 {
-        width: 90%;
-    }
-
-    .contact__form {
-        margin-top: 40px;
-    }
-
-}
-
-@media screen and (max-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .header {
-        padding: 15px 20px;
-    }
-
     .header__nav {
         position: absolute;
         top: 99%;
@@ -80,12 +54,29 @@
         opacity: 1;
         right: 0;
     }
-    .header__menu {
-        column-gap: 20px;
+    .banner {
+        height: 80vh;
     }
-
+    .row {
+        justify-content: center;
+    }
+    .col-6 {
+        width: 90%;
+    }
+    .contact__form {
+        margin-top: 40px;
+    }
     #burger {
         display: block;
     }
+}
 
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .header {
+        padding: 15px 20px;
+    }
 }

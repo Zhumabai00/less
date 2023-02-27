@@ -22,7 +22,6 @@ burger.addEventListener("click", (btn) => {
     if (bool) {
         show.classList.add('active');
         bool = !bool
-
     } else {
         show.classList.remove('active');
         bool = !bool;
